@@ -14,12 +14,12 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.Navbar_Items = [
-      { name: "Profile", URL: '#' },
-      { name: "Blog", URL: '#' },
-      { name: "Link", URL: '#' },
-      { name: <FontAwesomeIcon icon={faHackerrank} />, URL: "https://www.hackerrank.com/mcgill_will" },
-      { name: <FontAwesomeIcon icon={faLinkedin} />, URL: 'https://www.linkedin.com/in/will-mcgill/' },
-      { name: <FontAwesomeIcon icon={faGithub} />, URL: 'https://github.com/WillMcGill' }];
+      { name: "Profile", URL: '#' , target: '_SELF'},
+      { name: "Blog", URL: '#' , target: '_SELF'},
+      { name: "Link", URL: '#' , target: '_SELF'},
+      { name: <FontAwesomeIcon icon={faHackerrank} />, URL: 'https://www.hackerrank.com/mcgill_will' , target: '_blank'},
+      { name: <FontAwesomeIcon icon={faLinkedin} />, URL: 'https://www.linkedin.com/in/will-mcgill/' , target: '_blank' },
+      { name: <FontAwesomeIcon icon={faGithub} />, URL: 'https://github.com/WillMcGill' , target: '_blank'}];
   }
   render() {
 
