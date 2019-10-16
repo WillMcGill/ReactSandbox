@@ -9,21 +9,27 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faHackerrank } from '@fortawesome/free-brands-svg-icons';
 
 
-class App extends React.Component{
+class App extends React.Component {
 
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.Navbar_Items = ["Profile", "Blog", "Link", <FontAwesomeIcon icon={faHackerrank} /> , <FontAwesomeIcon icon={faLinkedin} />, <FontAwesomeIcon icon={faGithub} />];
+    this.Navbar_Items = [
+      { name: "Profile", URL: '#' },
+      { name: "Blog", URL: '#' },
+      { name: "Link", URL: '#' },
+      { name: <FontAwesomeIcon icon={faHackerrank} />, URL: "https://www.hackerrank.com/mcgill_will" },
+      { name: <FontAwesomeIcon icon={faLinkedin} />, URL: 'https://www.linkedin.com/in/will-mcgill/' },
+      { name: <FontAwesomeIcon icon={faGithub} />, URL: 'https://github.com/WillMcGill' }];
   }
-  render(){
-  
-  return (
-    //<div className="container">
-      <Navbar NavbarItems = {this.Navbar_Items}/>
-      
-    //</div>
-  );
-}
+  render() {
+
+    return (
+      //<div className="container">
+      <Navbar NavbarItems={this.Navbar_Items} />
+
+      //</div>
+    );
+  }
 }
 
 export default App

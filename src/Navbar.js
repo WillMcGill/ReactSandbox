@@ -5,7 +5,7 @@ class ListPopulate extends Component {
         return (
             this.props.ListItems.map((item, idx) => {
                 return (
-                    <a key={idx} className="nav-item nav-link" href="#">{item}</a>
+                    <a key={idx} className="nav-item nav-link" href={item.URL}>{item.name}</a>
                 )
             })
         )
